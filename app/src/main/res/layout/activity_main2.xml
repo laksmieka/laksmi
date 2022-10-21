@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity2">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgProfile"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/profil" />
+
+    <TextView
+        android:id="@+id/tvUsername"
+        android:layout_toEndOf="@+id/imgProfile"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="IM PROFILE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:id="@+id/viegaris"
+        android:layout_width="match_parent"
+        android:layout_below="@id/tvUsername"
+        android:visibility="visible"
+        android:layout_marginTop="50dp"
+        android:layout_height="3dp"
+        android:background="#FF000000"/>
+
+    <ImageView
+        android:id="@+id/txtgambar1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/viegaris"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/download"
+        android:padding="5dp"
+        android:src="@drawable/uty" />
+
+    <ImageView
+        android:id="@+id/txtgambar2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/txtgambar1"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="47dp"
+        android:background="@drawable/download"
+        android:padding="5dp"
+        android:layout_marginStart="50dp"
+        android:src="@drawable/uty" />
+
+    <ImageView
+        android:id="@+id/txtgambar3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/txtgambar2"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="-241dp"
+        android:background="@drawable/download"
+        android:padding="5dp"
+        android:layout_marginEnd="52dp"
+        android:src="@drawable/uty" />
+
+    <ImageView
+        android:id="@+id/txtgambar4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/txtgambar3"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="43dp"
+        android:background="@drawable/download"
+        android:padding="5dp"
+        android:layout_marginEnd="48dp"
+        android:src="@drawable/uty" />
+
+    <EditText
+        android:id="@+id/txtname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtgambar4"
+        android:layout_marginTop="50dp"
+        android:text="5190311095_i luh laksmi eka dewi "
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>
